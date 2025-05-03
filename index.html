@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI-Based Resume Screening Platform</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      padding-bottom: 60px;
+    }
+    .header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .section-title {
+      border-left: 5px solid #0d6efd;
+      padding-left: 10px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    .commit-table, .sprint-table {
+      margin-bottom: 30px;
+    }
+    .footer {
+      background-color: #0d6efd;
+      color: white;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      text-align: center;
+    }
+    code {
+      background: #e9ecef;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .repo-links a {
+      display: inline-block;
+      margin: 5px 10px 10px 0;
+      padding: 10px;
+      background-color: #e2e6ea;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #0d6efd;
+    }
+    .repo-links a:hover {
+      background-color: #d1dbe6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>AI-Based Resume Screening Platform</h1>
+    <p>Developed by <strong>Himaja Chirutha</strong></p>
+  </div>
+
+  <div class="container mt-4">
+
+    <h3 class="section-title">Project Overview</h3>
+    <p>This platform uses <strong>Mistral AI</strong> to intelligently screen and rank resumes against job descriptions. It enables bulk resume uploads, AI-driven shortlisting, recruiter dashboards, and subscription-based access control.</p>
+
+    <div class="repo-links">
+      <strong>GitHub Repositories:</strong><br/>
+      <a href="https://github.com/Himajachirutha/Resume-Parser" target="_blank">Main Project Repo</a>
+      <a href="https://github.com/Himajachirutha/Resume-Parser/commit/316ac26e99a985f5cc784346073029b79fed772e" target="_blank">Final Code Commit</a>
+    </div>
+
+    <h3 class="section-title">My Contribution</h3>
+    <ul>
+      <li>Developed the <strong>Flask backend</strong> for parsing and job-matching workflows</li>
+      <li>Integrated <strong>Mistral AI</strong> for resume ranking and scoring</li>
+      <li>Implemented <strong>resume/job upload, dashboard, and AI insights</strong></li>
+      <li>Handled <strong>user roles</strong> and subscription-based features</li>
+    </ul>
+
+    <h3 class="section-title">Core File Structure</h3>
+    <pre><code>Resume-Parser/
+├── app.py
+├── templates/
+│   ├── create_job.html
+│   ├── payment.html
+│   └── view_shortlist.html
+└── utils/
+    └── resume_processor.py</code></pre>
+
+    <h3 class="section-title">Sprint Objectives</h3>
+    <table class="table table-bordered sprint-table">
+      <thead class="table-light">
+        <tr><th>Sprint</th><th>Key Features Implemented</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Sprint 1</td><td>Resume Parsing, Normalization, Error Handling</td></tr>
+        <tr><td>Sprint 2</td><td>Resume & Job Upload UI, Subscription Flow</td></tr>
+        <tr><td>Sprint 3</td><td>Mistral AI Integration, Dashboard UI</td></tr>
+        <tr><td>Sprint 4</td><td>AI Insights, Resume Download, Final UI Polish</td></tr>
+      </tbody>
+    </table>
+
+    <h3 class="section-title">Commit Summary</h3>
+
+    <h5>Sprint 1</h5>
+    <table class="table table-striped commit-table">
+      <thead class="table-light"><tr><th>Date</th><th>Commit</th><th>Description</th><th>User Story</th><th>Task ID</th></tr></thead>
+      <tr><td>5/21/2024</td><td><code>55b653a</code></td><td>Resume parsing logic</td><td>US1</td><td>US1.1</td></tr>
+      <tr><td>5/22/2024</td><td><code>78d4f2b</code></td><td>Error handling</td><td>US1</td><td>US1.2</td></tr>
+      <tr><td>5/23/2024</td><td><code>92e1c4d</code></td><td>Data normalization</td><td>US1</td><td>US1.3</td></tr>
+      <tr><td>5/24/2024</td><td><code>a1b2c3d</code></td><td>Job description matching</td><td>US1</td><td>US1.4</td></tr>
+    </table>
+
+    <h5>Sprint 2</h5>
+    <table class="table table-striped commit-table">
+      <thead class="table-light"><tr><th>Date</th><th>Commit</th><th>Description</th><th>User Story</th><th>Task ID</th></tr></thead>
+      <tr><td>3/31/2025</td><td><code>c3a101b</code></td><td>Flask setup, job & resume UI</td><td>SC1.1, SC1.4</td><td>#101–#103</td></tr>
+    </table>
+
+    <h5>Sprint 3</h5>
+    <table class="table table-striped commit-table">
+      <thead class="table-light"><tr><th>Date</th><th>Commit</th><th>Description</th><th>User Story</th><th>Task ID</th></tr></thead>
+      <tr><td>4/2/2025</td><td><code>fabd6e3</code></td><td>Mistral AI + Dashboard UI</td><td>SC1.1–SC1.3</td><td>#201–#206</td></tr>
+    </table>
+
+    <h5>Sprint 4</h5>
+    <table class="table table-striped commit-table">
+      <thead class="table-light"><tr><th>Date</th><th>Commit</th><th>Description</th><th>User Story</th><th>Task ID</th></tr></thead>
+      <tr><td>4/14/2025</td><td><code>316ac26</code></td><td>Final: UI polish, download, AI insights</td><td>SC1.3, SC1.4</td><td>#207–#211</td></tr>
+    </table>
+
+    <h3 class="section-title"> Tech Stack</h3>
+    <ul>
+      <li><strong>Backend:</strong> Python, Flask</li>
+      <li><strong>Frontend:</strong> HTML, Bootstrap, Jinja2</li>
+      <li><strong>AI:</strong> Mistral AI (API Integration)</li>
+      <li><strong>Parsing:</strong> Spacy, PyPDF2, OCR (Tesseract)</li>
+      <li><strong>Database:</strong> SQLite with SQLAlchemy</li>
+    </ul>
+
+    <h3 class="section-title"> Contact</h3>
+    <p>
+      Visit my <a href="https://github.com/Himajachirutha" target="_blank">GitHub Profile</a><br/>
+      Hosted Page: <a href="https://himajachirutha.github.io/chiruthahimaja04.github.io/" target="_blank">Project Website</a>
+    </p>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Himaja Chirutha | AI Resume Parser
+  </div>
+
+</body>
+</html>
 
